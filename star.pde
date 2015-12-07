@@ -1,6 +1,6 @@
 class Star
 {
-  
+    //Fields
     float lastX;
     float lastY;
   
