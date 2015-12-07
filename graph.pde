@@ -11,7 +11,7 @@ class Graph
       int num = numberOfLines * 120;
      
 
-     
+     //numbering vertical axis
       for( int i = 0 ; i < numberOfLines+1 ; i++, place+=m , num-=120)
       {
         line(border-10,place,border,place);
@@ -23,7 +23,7 @@ class Graph
       float placeTwo = border;
       int numTwo = 2012;
      
-     
+      //numbering horizontal axis
       for( int i = 0 ; i < numberOfLinesTwo; i++, placeTwo+=c, numTwo +=1)
       {
         line(placeTwo, height-border, placeTwo, height-border+10);
@@ -31,7 +31,8 @@ class Graph
       }
       
        ArrayList<Float> datalist = new ArrayList<Float>();
-    
+      
+       //reading in my dataset
        String[] data = loadStrings("sum.csv");
        
        for(String s:data)
@@ -44,6 +45,8 @@ class Graph
        int maxVal = 619;
        int stop = 460;
        float placeThree = border;
+       
+       //drawing graph
        for( int i = 1 ; i < datalist.size() ; i++)
        {
          stroke( 0 , 255 , 255);
