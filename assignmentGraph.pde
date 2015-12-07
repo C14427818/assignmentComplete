@@ -59,16 +59,16 @@ void assignColors()
 void draw()
 {
    
-   cube.drawCube();
+   cube.drawCube();//calling cube class for menu as soon as program runs
    
    
-       for(int stars = 0; stars < 5 ; stars ++)
+       for(int stars = 0; stars < 5 ; stars ++)//drawing stars for background
         {
           star.drawStar(random(0, width), random(0, height), random(10, 50), (int)random(5, 10), color(random(100, 255), random(100, 255), 0));  
         } 
   
         
-  if(key == '0')
+  if(key == '0')//to go back to menu after entering an option
   {
     background(0);
     cube.drawCube();
@@ -80,7 +80,7 @@ void draw()
     
   }
   
-  if(key == '1')
+  if(key == '1')//option for line graph
   {
     
     background(bg);
@@ -95,7 +95,7 @@ void draw()
     
   }
   
-  if(key == '2')
+  if(key == '2')//option for pie chart
   {
     
      background(0);
