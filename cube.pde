@@ -1,5 +1,7 @@
 class Cube
 {
+
+    //FIELDS
     float a = 0;
     float r = 0;
     float b = 0;
@@ -14,11 +16,11 @@ class Cube
     
       pushMatrix();
       
-      translate(200, 300, map(noise(a), 0, 1, -250, 500));
+      translate(200, 300, map(noise(a), 0, 1, -250, 500));//to map cubes on screen
       rotateY(r);
       box(80);
       a = a + 0.003;
-      r = r + 0.01;
+      r = r + 0.01;//rotating cubes slowly so user can see options
       fill(0, 200, 250);
       stroke(random(0, 255), random(0, 255),random(0, 255));
       
@@ -34,7 +36,7 @@ class Cube
       rotateY(t);
       box(80);
       b = b - 0.003;
-      t = t - 0.01;
+      t = t - 0.01;//rotating second cube in opposite direction 
       fill(255, 255, 0);
       stroke(random(0, 255), random(0, 255),random(0, 255));
     
