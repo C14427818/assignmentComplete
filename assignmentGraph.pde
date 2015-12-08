@@ -106,7 +106,7 @@ void draw()
      text("2015", 410, 90);
    
      text("Global Solar Radiation in Joules/cm3 for Dublin_Airport (Monthly Average)", width/6, border-15);
-     text("Press 0 to go back to menu", 400, 550);
+     text("Press any key to go back to menu", 400, 550);
     
    }
    
